@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserInterfaceLayer.SearchPatientRecordController">
+   <children>
+      <Label layoutX="35.0" layoutY="58.0" prefHeight="40.0" prefWidth="293.0" text="Enter Informations to Search Patient record">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="124.0" prefHeight="40.0" prefWidth="126.0" text="Patient Name" textFill="#4d0a0a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="235.0" prefHeight="40.0" prefWidth="126.0" text="Father Name" textFill="#4d0a0a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="35.0" layoutY="177.0" prefHeight="33.0" prefWidth="257.0" />
+      <TextField fx:id="fathername" layoutX="35.0" layoutY="312.0" prefHeight="33.0" prefWidth="257.0" />
+      <Button fx:id="searchPatientRecord" layoutX="35.0" layoutY="398.0" mnemonicParsing="false" onAction="#searchPatientRecord" prefHeight="33.0" prefWidth="94.0" text="Search" textFill="#58b90f">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="cancel" layoutX="198.0" layoutY="398.0" mnemonicParsing="false" onAction="#cencelSearch" prefHeight="33.0" prefWidth="94.0" text="Cancel" textFill="#c31717">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label fx:id="errorLable" layoutX="35.0" layoutY="477.0" prefHeight="33.0" prefWidth="257.0" textFill="#e41010">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

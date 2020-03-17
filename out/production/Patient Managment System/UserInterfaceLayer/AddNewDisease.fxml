@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserInterfaceLayer.AddNewDiseaseController">
+   <children>
+      <Label layoutX="35.0" layoutY="58.0" prefHeight="40.0" prefWidth="293.0" text="Enter Informations to add new Disease record">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="124.0" prefHeight="40.0" prefWidth="126.0" text="Disease Name" textFill="#4d0a0a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="235.0" prefHeight="40.0" prefWidth="126.0" text="Disease Discriptions" textFill="#4d0a0a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="diseaseName" layoutX="35.0" layoutY="177.0" prefHeight="33.0" prefWidth="257.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Button fx:id="addNewDisease" layoutX="35.0" layoutY="398.0" mnemonicParsing="false" onAction="#addNewDisease" prefHeight="33.0" prefWidth="94.0" text="Save" textFill="#07eb0e">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="cancel" layoutX="198.0" layoutY="398.0" mnemonicParsing="false" onAction="#cancelDiseaseInsertion" prefHeight="33.0" prefWidth="94.0" text="Cancel" textFill="#f81c1c">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TextField fx:id="discription" layoutX="35.0" layoutY="295.0" prefHeight="33.0" prefWidth="257.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label fx:id="successLable" layoutX="35.0" layoutY="478.0" prefHeight="33.0" prefWidth="257.0">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1372.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserInterfaceLayer.AdminController">
+   <children>
+      <ToolBar layoutY="28.0" prefHeight="39.0" prefWidth="1372.0">
+        <items>
+          <Button fx:id="AddNewPatient" mnemonicParsing="false" onAction="#addNewPatient" text="Add New Patient">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonsearchPatientRecord" layoutX="10.0" layoutY="25.0" mnemonicParsing="false" onAction="#searchPatientButton" text="Search Patient Record">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="addNewDoctor" layoutX="10.0" layoutY="25.0" mnemonicParsing="false" onAction="#addNewDoctorButton" text="Add New Doctor">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="print" layoutX="66.0" layoutY="25.0" mnemonicParsing="false" onAction="#Print" text="Print">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+        </items>
+      </ToolBar>
+      <MenuBar layoutX="-6.0" prefHeight="29.0" prefWidth="1379.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Manage  Record">
+            <items>
+              <MenuItem fx:id="addNewpatient" mnemonicParsing="false" onAction="#addNewPatient" text="Add New Patient" />
+                  <MenuItem fx:id="menueSearchPatientRocord" mnemonicParsing="false" onAction="#searchPatient" text="Search Patient Record" />
+                  <MenuItem fx:id="AddNewDoctor" mnemonicParsing="false" onAction="#addNewDoctor" text="Add New Doctor" />
+                  <MenuItem fx:id="AddNewDisease" mnemonicParsing="false" onAction="#addNewDisease" text="Add new Disease" />
+                  <MenuItem fx:id="deletePatientRecord" mnemonicParsing="false" onAction="#deletePatient" text="Delete Patient Record" />
+                  <Menu mnemonicParsing="false" text="Updata Record">
+                    <items>
+                        <MenuItem fx:id="updatePatient" mnemonicParsing="false" onAction="#updatePatient" text="update Patient" />
+                      <MenuItem fx:id="updateDoctor" mnemonicParsing="false" onAction="#updateDoctor" text="update Doctor" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Search Record">
+            <items>
+              <MenuItem fx:id="searchPatientByID" mnemonicParsing="false" onAction="#searchPatientByID" text="Search Patient By ID" />
+                  <MenuItem fx:id="searchPatientByName" mnemonicParsing="false" onAction="#searchPatientByName" text="Search Patient By Name" />
+                  <MenuItem fx:id="searchPatientByAge" mnemonicParsing="false" onAction="#searchPatientByAge" text="Search Patient By Age" />
+                  <MenuItem fx:id="searchPatientByDisease" mnemonicParsing="false" onAction="#searchPatientByDisease" text="Search Patient By Disease" />
+                  <MenuItem fx:id="searchPatientByDoctor" mnemonicParsing="false" onAction="#searchPatientByDoctor" text="Search Patient By Doctor" />
+                  <MenuItem fx:id="searchDoctorByName" mnemonicParsing="false" onAction="#searchDoctorByName" text="Search Doctor By Name" />
+                  <MenuItem fx:id="searchDoctorByDiseaseSpacialization" mnemonicParsing="false" onAction="#searchDoctorByDiseaseSpacialization" text="Search Doctor By Disease Spacialization" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutUS" mnemonicParsing="false" onAction="#aboutUS" text=" About us" />
+                  <MenuItem fx:id="changePassword" mnemonicParsing="false" onAction="#changePassword" text="Change Password" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane layoutY="67.0" prefHeight="623.0" prefWidth="1016.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Doctor List">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="doctorTable" prefHeight="595.0" prefWidth="1016.0">
+                          <columns>
+                            <TableColumn fx:id="doctorID" prefWidth="262.99999237060547" text="Doctor ID" />
+                            <TableColumn fx:id="doctorName" prefWidth="346.00000762939453" text="Doctor Name" />
+                              <TableColumn fx:id="diseaseIDofDoctor" prefWidth="406.33331298828125" text="Spacialization" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Patient List">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="patientTable" prefHeight="605.0" prefWidth="1016.0">
+                           <columns>
+                              <TableColumn fx:id="patientID" prefWidth="75.0" text="ID" />
+                              <TableColumn fx:id="patientName" prefWidth="132.3333282470703" text="Name" />
+                              <TableColumn fx:id="fatherName" prefWidth="120.66667175292969" text="Father Name" />
+                              <TableColumn fx:id="gender" prefWidth="106.33332824707031" text="Gender" />
+                              <TableColumn fx:id="dateOfBirth" prefWidth="134.6666259765625" text="Dete Of Birth" />
+                              <TableColumn fx:id="doctorIDofPatient" prefWidth="136.66668701171875" text="Doctor ID" />
+                              <TableColumn fx:id="diseaseHistory" prefWidth="175.33331298828125" text="Disease History" />
+                              <TableColumn fx:id="discription" prefWidth="131.0" text="Priscription" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Disease List">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="diseaseTable" prefHeight="595.0" prefWidth="1016.0">
+                           <columns>
+                              <TableColumn fx:id="diseaseID" prefWidth="306.0" text="Disease ID" />
+                              <TableColumn fx:id="diseaseName" prefWidth="369.0" text="Disease Name" />
+                              <TableColumn fx:id="discription" prefWidth="340.0" text="Disease Discription" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <AnchorPane fx:id="smallAnchorPane" layoutX="1016.0" layoutY="67.0" prefHeight="623.0" prefWidth="357.0" />
+   </children>
+</AnchorPane>

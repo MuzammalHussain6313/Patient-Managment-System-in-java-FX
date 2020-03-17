@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin">
+   <children>
+      <AnchorPane layoutY="83.0" prefHeight="607.0" prefWidth="1349.0" />
+      <MenuBar layoutX="-6.0" prefHeight="41.0" prefWidth="1356.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Manage  Record">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Add New Patient" />
+                  <MenuItem mnemonicParsing="false" text="Search Patient Record" />
+                  <MenuItem mnemonicParsing="false" text="Add New Doctor" />
+                  <MenuItem mnemonicParsing="false" text="Add new Disease" />
+                  <MenuItem mnemonicParsing="false" text="Delete Patient Record" />
+                  <Menu mnemonicParsing="false" text="Updata Record">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About us" />
+                      <MenuItem mnemonicParsing="false" text="Change Password" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Search Record">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Search Patient By ID" />
+                  <MenuItem mnemonicParsing="false" text="Search Patient By Name" />
+                  <MenuItem mnemonicParsing="false" text="Search Patient By Age" />
+                  <MenuItem mnemonicParsing="false" text="Search Patient By Disease" />
+                  <MenuItem mnemonicParsing="false" text="Search Patient By Doctor" />
+                  <MenuItem mnemonicParsing="false" text="Search Doctor By Name" />
+                  <MenuItem mnemonicParsing="false" text="Search Doctor By Disease Spacialization" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text=" About us" />
+                  <MenuItem mnemonicParsing="false" text="Change Password" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutX="-2.0" layoutY="41.0" prefHeight="38.0" prefWidth="1354.0">
+         <children>
+            <ToolBar layoutX="2.0" layoutY="-1.0" prefHeight="44.0" prefWidth="1350.0">
+              <items>
+                <Button fx:id="AddNewPatient" mnemonicParsing="false" onAction="#handelAction" text="Add New Patient">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="25.0" mnemonicParsing="false" text="Search Patient Record">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="25.0" mnemonicParsing="false" text="Add New Doctor">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="66.0" layoutY="25.0" mnemonicParsing="false" text="Print">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+              </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

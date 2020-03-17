@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="310.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserInterfaceLayer.ForGuestSerachRecordByAge">
+   <children>
+      <Label layoutX="69.0" layoutY="110.0" prefHeight="30.0" prefWidth="70.0" text="Age" />
+      <Label layoutX="220.0" layoutY="40.0" prefHeight="30.0" prefWidth="245.0" text="Enter Age of Patient in numaric Valeu" />
+      <TextField fx:id="age" layoutX="175.0" layoutY="104.0" prefHeight="41.0" prefWidth="341.0" promptText="Enter Age;" />
+      <Button fx:id="searchButton" layoutX="209.0" layoutY="214.0" mnemonicParsing="false" onAction="#SearchPatientByAge" prefHeight="41.0" prefWidth="103.0" text="Search" />
+      <Button fx:id="cancelButton" layoutX="378.0" layoutY="214.0" mnemonicParsing="false" onAction="#cancelSearch" prefHeight="41.0" prefWidth="103.0" text="Cancel" />
+   </children>
+</AnchorPane>
