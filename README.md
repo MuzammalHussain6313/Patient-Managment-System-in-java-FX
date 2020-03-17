@@ -24,11 +24,11 @@ alt="Click Image to play video" width="600" height="300" border="10" /></a>
  
  Add new Doctor
  
- <img src="assets/addDoctor.PNG" width="1000" height="500">
+ <img src="assets/addDoctor.PNG" width="1000" height=400">
  
  Insert a new Patient.
  
- <img src="assets/addpatientFX.PNG" width="1000" height="500">
+ <img src="assets/addpatientFX.PNG" width="1000" height="400">
  
  Change Forgotton password.
  
@@ -40,7 +40,7 @@ alt="Click Image to play video" width="600" height="300" border="10" /></a>
 
 search Patient
 
-<img src="assets/searchpatient.PNG" width="1000" height="500">
+<img src="assets/searchpatient.PNG" width="1000" height="400">
 
 Create a new user
 
