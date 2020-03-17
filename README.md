@@ -5,42 +5,43 @@ Front-end developed in java FXML and back-end debveloped in java lnguage. And my
 
 <h3>Features</h3>
 
-Multipal Users of system (Admin, Guest, computer operator etc).
-admin can Manage Doctor records. 
-computer operator can manage Patient and disease records.
+<ul>
+<li>Multipal Users of system (Admin, Guest, computer operator etc).</li>
+<li>admin can Manage Doctor records. </li>
+<li>computer operator can manage Patient and disease records.</li></ul>
 
 <h4>Click play button to view Demo video of project.<h4/>
   
   <a href="https://www.youtube.com/watch?v=3-L3c0RB8qM?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE" target="_blank"><img src="assets/FX.PNG" 
-alt="Click Image to play video" width="600" height="400" border="10" /></a>
+alt="Click Image to play video" width="600" height="300" border="10" /></a>
   
 
 <h3>Screen shorts</h3>
   
   Login
   
-<img src="assets/loginFX.PNG" width="500" height="400">
+<img src="assets/loginFx.PNG" width="500" height="400">
  
  Add new Doctor
  
- <img src="assets/addDoctor.PNG" width="500" height="400">
+ <img src="assets/addDoctor.PNG" width="900" height="500">
  
  Insert a new Patient.
  
- <img src="assets/addpatientFX.PNG" width="600" height="400">
+ <img src="assets/addpatientFX.PNG" width="900" height="500">
  
  Change Forgotton password.
  
- <img src="assets/forget password.PNG" width="600" height="400">
+ <img src="assets/forget password.PNG" width="500" height="400">
  
  Search Doctor By Name
  
- <img src="assets/searchDoctorByName.PNG" width="700" height="400">
+ <img src="assets/searchDoctorByName.PNG" width="800" height="500">
 
 search Patient
 
-<img src="assets/searchpatient.PNG" width="800" height="500">
+<img src="assets/searchpatient.PNG" width="1000" height="500">
 
 Create a new user
 
-<img src="assets/signup.PNG" width="700" height="400">
+<img src="assets/signup.PNG" width="600" height="400">
