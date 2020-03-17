@@ -20,15 +20,15 @@ alt="Click Image to play video" width="600" height="300" border="10" /></a>
   
   Login
   
-<img src="assets/loginFx.PNG" width="500" height="400">
+<img src="assets/loginFx.PNG" width="600" height="400">
  
  Add new Doctor
  
- <img src="assets/addDoctor.PNG" width="900" height="500">
+ <img src="assets/addDoctor.PNG" width="1000" height="500">
  
  Insert a new Patient.
  
- <img src="assets/addpatientFX.PNG" width="900" height="500">
+ <img src="assets/addpatientFX.PNG" width="1000" height="500">
  
  Change Forgotton password.
  
@@ -36,7 +36,7 @@ alt="Click Image to play video" width="600" height="300" border="10" /></a>
  
  Search Doctor By Name
  
- <img src="assets/searchDoctorByName.PNG" width="800" height="500">
+ <img src="assets/searchDoctorByName.PNG" width="1000" height="400">
 
 search Patient
 
