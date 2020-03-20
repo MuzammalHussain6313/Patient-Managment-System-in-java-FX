@@ -22,9 +22,9 @@ alt="Click Image to play video" width="600" height="300" border="10" /></a>
   
 <img src="assets/loginFx.PNG" width="600" height="400">
  
- Add new Doctor
+ Add new Doctor.
  
- <img src="assets/addDoctor.PNG" width="1000" height=400">
+ <img src="assets/addDoctor.PNG" width="1000" height="400">
  
  Insert a new Patient.
  
