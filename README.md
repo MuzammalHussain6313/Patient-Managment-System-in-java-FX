@@ -12,7 +12,7 @@ Front-end developed in java FXML and back-end debveloped in java lnguage. And my
 
 <h4>Click play button to view Demo video of project.<h4/>
   
-  <a href="https://www.youtube.com/watch?v=3-L3c0RB8qM?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE" target="_blank"><img src="assets/FX.PNG" 
+  <a href="https://www.youtube.com/watch?v=3-L3c0RB8qM" target="_blank"><img src="assets/FX.PNG" 
 alt="Click Image to play video" width="600" height="300" border="10" /></a>
   
 
